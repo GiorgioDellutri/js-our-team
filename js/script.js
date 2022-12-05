@@ -79,25 +79,25 @@ for (let key in data){
 for (let i = 0; i < data.length; i++){
     const pElement = document.createElement('p');
     pElement.innerHTML = data[i].name;
-    namesContainer.appendChild(pElement)
+    namesContainer.appendChild(pElement);
 }
 
 for (let i = 0; i < data.length; i++){
     const pElement = document.createElement('p');
     pElement.innerHTML = data[i].lastname;
-    surnamesContainer.appendChild(pElement)
+    surnamesContainer.appendChild(pElement);
 }
 
 for (let i = 0; i < data.length; i++){
     const pElement = document.createElement('p');
     pElement.innerHTML = data[i].role;
-    roleContainer.appendChild(pElement)
+    roleContainer.appendChild(pElement);
 }
 
 for (let i = 0; i < data.length; i++){
     const pElement = document.createElement('p');
     pElement.innerHTML = data[i].photo;
-    photoContainer.appendChild(pElement)
+    photoContainer.appendChild(pElement);
 }
 
 
