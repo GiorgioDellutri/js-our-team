@@ -24,6 +24,10 @@ Scott Estrada  Developer         scott-estrada-developer.jpg
  Barbara Ramos  Graphic Designer  barbara-ramos-graphic-designer.jpg? */
 
 
+let namesContainer = document.getElementById('name-container');
+let surnamesContainer = document.getElementById('surnames-container');
+let roleContainer = document.getElementById('role-container');
+let photoContainer = document.getElementById('photo-container');
 // Creo l'array di oggetti
 const data = [
     {
@@ -62,11 +66,39 @@ const data = [
         role : 'Graphic Designer',
         photo : 'barbara-ramos-graphic-designer.jpg'
     },
-
 ]
 
+// Stampo su console le info di ogni membro 
 
+for (let key in data){
+    console.log(data[key])
+}
 
+// Stampo le info dei singoli membri del team sul DOM
+
+for (let i = 0; i < data.length; i++){
+    const pElement = document.createElement('p');
+    pElement.innerHTML = data[i].name;
+    namesContainer.appendChild(pElement)
+}
+
+for (let i = 0; i < data.length; i++){
+    const pElement = document.createElement('p');
+    pElement.innerHTML = data[i].lastname;
+    surnamesContainer.appendChild(pElement)
+}
+
+for (let i = 0; i < data.length; i++){
+    const pElement = document.createElement('p');
+    pElement.innerHTML = data[i].role;
+    roleContainer.appendChild(pElement)
+}
+
+for (let i = 0; i < data.length; i++){
+    const pElement = document.createElement('p');
+    pElement.innerHTML = data[i].photo;
+    photoContainer.appendChild(pElement)
+}
 
 
 
