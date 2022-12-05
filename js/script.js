@@ -102,6 +102,19 @@ for (let i = 0; i < data.length; i++){
 
 
 
+// const cardContainer = document.querySelector('div.card-container')
+// cardContainer.classList.add('d-flex', 'flex-wrap');
+
+// document.getElementById("").innerHTML = `<img src="wayne-barnett-founder-ceo.jpg" />`;
+
+
+
+//     // CREO IL DIV
+//     for (let i =0; i < 6; i++){
+//         const card = document.createElement('div');
+//         card.classList.add('size', 'm-3');
+//         cardContainer.appendChild(card)
+//     }
 
 
 
